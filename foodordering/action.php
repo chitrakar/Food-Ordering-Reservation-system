@@ -151,17 +151,14 @@
         
 		$price = $_POST['price'];
 		$total = $_POST['total'];
-        // if($qty<1 || $qty>20)
-        // {
-        //     echo 'Invalid Quantity';
-        // }
-        else{
-            $sql = "UPDATE cart SET qty='$qty',price='$price',total='$total' WHERE email='$email' AND pid='$pid'";
-            $runQuery = query($sql);
-            if($runQuery){
-                echo 'Product Updated';
-            }
+        
+    
+        $sql = "UPDATE cart SET qty='$qty',price='$price',total='$total' WHERE email='$email' AND pid='$pid'";
+        $runQuery = query($sql);
+        if($runQuery){
+            echo 'Product Updated';
         }
+        
 		
     }
 

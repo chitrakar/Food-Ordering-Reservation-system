@@ -244,7 +244,7 @@
 							</figure>
 							<div class="profile-info" data-lock-name="Admin" data-lock-email="admin@gmail.com">
 								<span class="name"><?php echo $_SESSION['rname'] ?></span>
-								<span class="role">administrator</span>
+								<span class="role">Restaurant Admin</span>
 							</div>
 			
 							<i class="fa custom-caret"></i>
